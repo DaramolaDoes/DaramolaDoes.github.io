@@ -32,6 +32,8 @@ Boston and Providence are the first completed matchup in a 64-city program. Camb
 
 The program is designed to create a comparable evidence base across markets while maintaining consistent model evaluation, local context, transparent limitations, and reproducible publication standards.
 
+The new **64-City Price Bracket** presents the entire research field on one page. Completed matchup winners advance according to the higher published next-month forecast price. This is a visualization convention—not an assessment of affordability, momentum, model accuracy, market quality, or investment potential.
+
 ## Research standard
 
 Each published analysis identifies:
@@ -52,6 +54,7 @@ Zillow provides the underlying historical ZHVI data. ChrionML independently prod
 - [Scientific AI Platform](https://daramoladoes.github.io/platform.html)
 - [City Standings](https://daramoladoes.github.io/standings.html)
 - [Weekly Schedule](https://daramoladoes.github.io/schedule.html)
+- [64-City Price Bracket](https://daramoladoes.github.io/bracket.html)
 - [Boston vs Providence Box Score](https://daramoladoes.github.io/boxscore.html)
 - [Cambridge vs Ithaca Box Score](https://daramoladoes.github.io/cambridge-ithaca-boxscore.html)
 - [ChrionML AI Labs Videos](https://www.youtube.com/@chrionml/videos)

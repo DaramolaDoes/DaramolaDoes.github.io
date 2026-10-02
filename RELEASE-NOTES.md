@@ -1,23 +1,23 @@
-# Release notes — Real Estate Condo Price Board
+# Release notes — 64-City Price Bracket
 
 Release date: October 2, 2026
 
 ## Summary
 
-This release replaces the former single-matchup `boxscore.html` experience with a responsive, ESPN-inspired Real Estate Condo Price Board. Completed weekly matchups now appear in a continuous stacked view, while detailed model and research statistics remain available through expandable box scores.
+This additive release introduces `bracket.html`, a responsive, ESPN-inspired view of the complete 64-city research tournament. The existing schedule, standings, price board, research homepage, and published box scores remain in place.
 
 ## What changed
 
-- Added a stacked weekly price board for completed matchups.
-- Added Cambridge vs. Ithaca as the featured Week 2 matchup.
-- Retained Boston vs. Providence as the Week 1 final.
-- Displayed each city's latest Zillow ZHVI value, next-month forecast, and projected change.
-- Added expandable research statistics, prediction ranges, trend charts, and five-model MAE comparisons.
-- Added responsive desktop and mobile layouts.
-- Added canonical URL, search description, and Open Graph metadata for `boxscore.html`.
-- Corrected portfolio methodology language to distinguish Zillow's published ZHVI histories from ChrionML's independent dataset construction, quality assurance, modeling, backtesting, interpretation, and visualization.
-- Added direct Zillow source links for each completed city.
-- Preserved schedule-driven homepage counts and the latest completed matchup logic.
+- Added `bracket.html` as a separate page; `schedule.html` was not replaced.
+- Displays all 64 cities across East, West, South, and Midwest regional brackets.
+- Advances published winners automatically from `schedule-data.json`.
+- Shows Boston and Cambridge in East Quarterfinal 1 based on their published next-month forecast prices.
+- Displays both forecast prices for completed matchups and labels the higher-price city as the bracket winner.
+- Preserves full city names through multiline wrapping at normal browser zoom.
+- Uses horizontal regional scrolling on smaller screens instead of truncating city names.
+- Includes an embedded fallback dataset so the page remains readable when opened outside a web server.
+- Adds Bracket navigation to the research homepage and adds the page to `sitemap.xml`.
+- Retains explicit Zillow-source and independent ChrionML-methodology disclosures.
 
 ## Research disclosure
 
@@ -27,12 +27,12 @@ Forecasts are analytical estimates, not appraisals, investment advice, or guaran
 
 ## Primary production files
 
-- `boxscore.html` — new Real Estate Condo Price Board
-- `cambridge-ithaca-boxscore.html` — Week 2 full matchup research
-- `index.html` — research homepage with current program totals
-- `schedule.html` and `schedule-data.json` — completed-matchup status and links
-- `README.md` — updated portfolio methodology
+- `bracket.html` — new complete 64-city bracket
+- `schedule-data.json` — authoritative matchup status, forecasts, and box-score links
+- `index.html` — adds the Bracket navigation link
+- `sitemap.xml` — adds the public bracket URL
+- `README.md` — documents the bracket convention and public link
 
 ## Recommended commit message
 
-`Release condo price board and transparent ZHVI methodology`
+`Add 64-city price bracket with automatic winner advancement`
