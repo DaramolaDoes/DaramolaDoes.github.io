@@ -1,429 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="robots" content="index,follow" />
-    <title>Boston vs Providence Forecast Box Score | ChrionML AI Labs</title>
-    <meta name="description" content="Compare Boston 02114 and Providence 02903 home-value forecasts, historical trends, model selection, uncertainty, and rolling forecast error." />
-    <link rel="canonical" href="https://daramoladoes.github.io/boxscore.html" />
-    <link rel="icon" type="image/png" href="assets/cml-logo.png" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Boston vs Providence Forecast Box Score" />
-    <meta property="og:description" content="Boston leads on forecast value; Providence leads on projected momentum." />
-    <meta property="og:url" content="https://daramoladoes.github.io/boxscore.html" />
-    <meta property="og:image" content="https://daramoladoes.github.io/boston-providence-trends.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        background: #eceef1;
-        color: #202124;
-        font-family: Arial, sans-serif;
-      }
-      a {
-        color: #1769aa;
-        text-decoration: none;
-      }
-      header {
-        background: #fff;
-        border-bottom: 1px solid #ddd;
-      }
-      nav {
-        max-width: 1180px;
-        margin: auto;
-        display: flex;
-        gap: 24px;
-        align-items: center;
-        padding: 15px 22px;
-      }
-      .brand {
-        font-weight: 900;
-        color: #111;
-        font-size: 18px;
-      }
-      nav a {
-        font-size: 12px;
-      }
-      .active {
-        border-bottom: 3px solid #d22135;
-        padding-bottom: 10px;
-      }
-      main {
-        max-width: 1180px;
-        margin: 28px auto;
-        padding: 0 20px;
-      }
-      .eyebrow {
-        font-size: 11px;
-        letter-spacing: 1.6px;
-        text-transform: uppercase;
-        color: #74777d;
-        font-weight: bold;
-      }
-      h1 {
-        font-size: 36px;
-        margin: 8px 0;
-      }
-      .intro {
-        color: #6d7077;
-        line-height: 1.6;
-        max-width: 800px;
-      }
-      .score,
-      .panel,
-      .trend,
-      .side {
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      .meta {
-        text-align: center;
-        background: #f7f8fa;
-        border-bottom: 1px solid #eee;
-        padding: 12px;
-        font-size: 10px;
-        letter-spacing: 1px;
-      }
-      .teams {
-        display: grid;
-        grid-template-columns: 1fr 130px 1fr;
-        align-items: center;
-        padding: 30px;
-      }
-      .team {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-      }
-      .team.right {
-        flex-direction: row-reverse;
-        text-align: right;
-      }
-      .circle {
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        background: #1769aa;
-        color: #fff;
-        font-weight: 900;
-      }
-      .right .circle {
-        background: #d22135;
-      }
-      .team h2 {
-        margin: 0;
-        font-size: 23px;
-      }
-      .team p {
-        font-size: 12px;
-        color: #777;
-        margin: 6px 0;
-      }
-      .forecast {
-        font-size: 29px;
-        font-weight: 900;
-        margin-top: 14px;
-      }
-      .forecast small {
-        display: block;
-        font-size: 9px;
-        color: #777;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      .vs {
-        text-align: center;
-        font-size: 12px;
-        color: #777;
-      }
-      .vs strong {
-        display: block;
-        font-size: 16px;
-        color: #222;
-      }
-      .leader {
-        text-align: center;
-        border-top: 1px solid #eee;
-        padding: 15px;
-        font-weight: bold;
-        color: #d22135;
-      }
-      .layout {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 290px;
-        gap: 20px;
-        margin-top: 20px;
-      }
-      .panel h2,
-      .side h2,
-      .trend h2 {
-        font-size: 18px;
-        margin: 0;
-        padding: 19px;
-        border-bottom: 1px solid #eee;
-      }
-      .scroll {
-        overflow: auto;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed;
-      }
-      th,
-      td {
-        padding: 16px;
-        border-top: 1px solid #eee;
-        font-size: 13px;
-      }
-      thead th {
-        background: #f7f8fa;
-        color: #73767c;
-        font-size: 10px;
-        text-transform: uppercase;
-      }
-      tbody th {
-        text-align: left;
-        width: 42%;
-      }
-      td {
-        text-align: center;
-      }
-      .featured th,
-      .featured td {
-        background: #eef5fc;
-        color: #174f82;
-      }
-      .side > div {
-        padding: 0 20px 18px;
-      }
-      .side p {
-        font-size: 12px;
-        line-height: 1.7;
-        color: #6f737a;
-      }
-      .side b {
-        float: right;
-      }
-      .model {
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-      }
-      .trend {
-        margin-top: 20px;
-      }
-      .trend img {
-        width: 100%;
-        display: block;
-        padding: 8px;
-      }
-      .notes {
-        font-size: 12px;
-        color: #70737a;
-        line-height: 1.7;
-        padding: 20px;
-        background: #fff;
-        margin-top: 20px;
-        border-radius: 10px;
-      }
-      footer {
-        max-width: 1180px;
-        margin: 24px auto;
-        padding: 0 20px 30px;
-        color: #777;
-        font-size: 11px;
-      }
-      @media (max-width: 800px) {
-        .layout {
-          grid-template-columns: 1fr;
-        }
-        .teams {
-          grid-template-columns: 1fr 55px 1fr;
-          padding: 22px 10px;
-        }
-        .team,
-        .team.right {
-          flex-direction: column;
-          text-align: center;
-        }
-        .circle {
-          width: 48px;
-          height: 48px;
-        }
-        .team h2 {
-          font-size: 17px;
-        }
-        .forecast {
-          font-size: 22px;
-        }
-        nav {
-          flex-wrap: wrap;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a class="brand" href="index.html">CML© AI Labs</a>
-        <a href="index.html">Research</a>
-        <a href="platform.html">Platform</a>
-        <a href="standings.html">Standings</a>
-        <a href="schedule.html">Schedule</a>
-        <a class="active" href="boxscore.html">Box Score</a>
-      </nav>
-    </header>
-    <main>
-      <p class="eyebrow">East region · Seed 1 vs Seed 16 · Forecast analysis</p>
-      <h1>Boston vs Providence</h1>
-      <p class="intro">
-        Monthly condo/co-op ZHVI comparison using 80 observations per city and
-        the same expanding-window one-month backtest.
-      </p>
-      <section class="score">
-        <div class="meta">
-          SEPTEMBER 2026 FORECAST · LEADER RULE: HIGHER PROJECTED MONTHLY GROWTH
-        </div>
-        <div class="teams">
-          <div class="team">
-            <div class="circle">BOS</div>
-            <div>
-              <h2>Boston, MA</h2>
-              <p>East seed 1 · ZIP 02114</p>
-              <div class="forecast">
-                $779,306<small>Next-month forecast</small>
-              </div>
-                <p>+0.06% vs August</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Real Estate Condo Price Board | ChrionML AI Labs</title>
+  <meta name="description" content="Explore weekly ZIP-level condo and co-op price forecasts, model comparisons, backtests, and research statistics from ChrionML AI Labs.">
+  <link rel="canonical" href="https://daramoladoes.github.io/boxscore.html">
+  <meta property="og:title" content="Real Estate Condo Price Board | ChrionML AI Labs">
+  <meta property="og:description" content="Weekly condo and co-op forecasts with expandable model box scores and transparent Zillow ZHVI sourcing.">
+  <meta property="og:url" content="https://daramoladoes.github.io/boxscore.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/cml-logo.png">
+  <style>
+    :root{--navy:#071b2e;--blue:#0876bf;--red:#c8102e;--gold:#f1a900;--ink:#202124;--muted:#6a7078;--line:#dfe3e8;--paper:#fff;--bg:#eef0f3}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}
+    .sitehead{background:var(--navy);color:#fff}.nav{max-width:1050px;margin:auto;display:flex;align-items:center;gap:24px;padding:13px 22px}.brand{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:900;letter-spacing:.4px;margin-right:auto}.brand img{width:34px;height:34px;border-radius:50%}.nav>a:not(.brand){font-size:12px;color:#dbe7f0}.nav .active{border-bottom:3px solid #30a9e9;padding:13px 0 10px}
+    main{max-width:980px;margin:22px auto 50px;padding:0 18px}.boardhead,.dategroup{background:var(--paper);border-radius:10px;box-shadow:0 1px 2px #16233312}.boardhead{padding:20px 22px 0}.titleline{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:800}.titleline h1{margin:6px 0 5px;font-size:32px;letter-spacing:-.7px}.titleline p{margin:0;color:var(--muted);font-size:13px;line-height:1.5;max-width:660px}.counter{background:#eef7fd;color:#075b91;border-radius:999px;padding:8px 12px;font-size:11px;font-weight:800;white-space:nowrap}
+    .weeks{display:grid;grid-template-columns:repeat(4,1fr);margin-top:22px;border-top:1px solid var(--line)}.week{text-align:center;padding:14px 8px 12px;color:#777;font-size:11px;border-bottom:4px solid transparent}.week b{display:block;font-size:12px;color:#555}.week.active{border-bottom-color:var(--blue);color:var(--blue)}.week.active b{color:#111}
+    .dategroup{margin-top:14px;overflow:hidden}.datebar{display:flex;justify-content:space-between;align-items:center;padding:15px 17px;border-bottom:1px solid var(--line);font-size:13px}.datebar strong{font-size:14px}.datebar span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+    .matchup{padding:0 16px}.game{padding:15px 0 12px;border-bottom:1px solid var(--line)}.game:last-child{border-bottom:0}.gametop{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px}.status{font-size:10px;font-weight:900;letter-spacing:1.2px;color:#111}.method{font-size:10px;color:var(--muted)}
+    .scoregrid{display:grid;grid-template-columns:minmax(0,1fr) 118px;gap:20px;align-items:center}.teams{display:grid;gap:13px}.team{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:12px;align-items:center}.citymark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#e7f3fb;border:2px solid #8fcbed;color:#075b91;font-size:10px;font-weight:900}.team:nth-child(2) .citymark{background:#fff4db;border-color:#f7ca64;color:#8a5a00}.city b{display:block;font-size:15px}.city small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.price{text-align:right}.price strong{display:block;font-size:22px;letter-spacing:-.5px}.price small{display:block;color:var(--muted);font-size:9px;margin-top:2px}.price .up{color:#147c45}
+    details{position:relative}details[open]{grid-column:1/-1}details[open] summary{width:118px;margin-left:auto}summary{list-style:none;cursor:pointer;border:1px solid #b8c1ca;border-radius:4px;padding:10px 9px;text-align:center;font-size:11px;font-weight:800;background:#fff}summary::-webkit-details-marker{display:none}summary:after{content:" +"}details[open] summary:after{content:" −"}.box{margin-top:15px;border-top:3px solid var(--navy);background:#f8f9fa;padding:17px;border-radius:0 0 7px 7px}.box h3{font-size:17px;margin:0 0 4px}.box .sub{font-size:11px;color:var(--muted);line-height:1.5;margin:0 0 15px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}.stat{background:#fff;border:1px solid var(--line);border-radius:6px;padding:11px}.stat small{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.7px}.stat b{display:block;margin-top:5px;font-size:14px}.tables{display:grid;grid-template-columns:1fr 1fr;gap:12px}.modeltable{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}.modeltable h4{margin:0;padding:11px;background:#eef2f5;font-size:12px}.modeltable table{width:100%;border-collapse:collapse}.modeltable th,.modeltable td{padding:8px 10px;border-top:1px solid #edf0f2;font-size:10px;text-align:left}.modeltable td{text-align:right}.winner{color:#096e43;font-weight:900}.source{font-size:10px;line-height:1.55;color:#5e646b;margin:15px 0 0;padding-top:13px;border-top:1px solid var(--line)}.source a{color:#086ba8;font-weight:700}.trend{width:100%;margin-top:14px;border:1px solid var(--line);border-radius:6px;background:#fff}
+    footer{max-width:980px;margin:auto;padding:0 18px 30px;font-size:10px;color:#73777d;line-height:1.6}
+    @media(max-width:720px){.nav>a:not(.brand){display:none}.titleline{display:block}.counter{display:inline-block;margin-top:12px}.titleline h1{font-size:27px}.scoregrid{grid-template-columns:1fr}.scoregrid>details>summary{width:100%}.stats{grid-template-columns:1fr 1fr}.tables{grid-template-columns:1fr}.weeks{overflow:auto;grid-template-columns:repeat(4,125px)}.team{grid-template-columns:40px minmax(0,1fr) auto}.price strong{font-size:18px}.method{display:none}}
+  </style>
+</head>
+<body>
+  <header class="sitehead"><nav class="nav"><a class="brand" href="index.html"><img src="assets/cml-logo.png" alt="CML logo">CHRIONML® AI LABS</a><a href="index.html">Research</a><a href="standings.html">Standings</a><a href="schedule.html">Schedule</a><a class="active" href="boxscore.html">Price Board</a></nav></header>
+  <main>
+    <section class="boardhead">
+      <div class="titleline"><div><div class="eyebrow">64-City Intelligence · Applied ML research</div><h1>Real Estate Condo Price Board</h1><p>Weekly ZIP-level condo/co-op forecasts derived from Zillow Home Value Index histories, with ChrionML dataset construction, quality assurance, model evaluation, and interpretation.</p></div><span class="counter">4 cities · 2 final matchups</span></div>
+      <div class="weeks" aria-label="Research weeks"><a class="week" href="#week1"><b>WEEK 1</b>SEP 25</a><a class="week active" href="#week2"><b>WEEK 2</b>OCT 2</a><span class="week"><b>WEEK 3</b>OCT 9</span><span class="week"><b>WEEK 4</b>OCT 16</span></div>
+    </section>
+
+    <section class="dategroup" id="week2">
+      <div class="datebar"><strong>Friday, October 2, 2026</strong><span>Week 2 · East</span></div>
+      <div class="matchup"><article class="game">
+        <div class="gametop"><span class="status">FINAL · MODEL REVIEW COMPLETE</span><span class="method">80 months · 44 rolling backtests per city</span></div>
+        <div class="scoregrid">
+          <div class="teams">
+            <div class="team"><span class="citymark">CAM</span><div class="city"><b>Cambridge, MA</b><small>ZIP 02139 · Latest ZHVI $886,874</small></div><div class="price"><strong>$888,570</strong><small>FORECAST · <span class="up">+0.19%</span></small></div></div>
+            <div class="team"><span class="citymark">ITH</span><div class="city"><b>Ithaca, NY</b><small>ZIP 14850 · Latest ZHVI $289,770</small></div><div class="price"><strong>$289,770</strong><small>FORECAST · 0.00%</small></div></div>
+          </div>
+          <details><summary>BOX SCORE</summary><div class="box">
+            <h3>Cambridge vs Ithaca research statistics</h3><p class="sub">Cambridge leads on forecast value and projected month-ahead momentum; Ithaca leads cumulative appreciation since January 2020.</p>
+            <div class="stats"><div class="stat"><small>Cambridge growth</small><b>+17.8%</b></div><div class="stat"><small>Ithaca growth</small><b>+29.5%</b></div><div class="stat"><small>Cambridge range</small><b>$883K–$892K</b></div><div class="stat"><small>Ithaca range</small><b>$288K–$291K</b></div></div>
+            <div class="tables">
+              <div class="modeltable"><h4>Cambridge · MAE</h4><table><tr class="winner"><th>Drift · selected</th><td>$3,030</td></tr><tr><th>Last value</th><td>$3,250</td></tr><tr><th>Holt damped</th><td>$7,877</td></tr><tr><th>Linear trend</th><td>$20,728</td></tr><tr><th>Seasonal naive</th><td>$26,619</td></tr></table></div>
+              <div class="modeltable"><h4>Ithaca · MAE</h4><table><tr class="winner"><th>Last value · selected</th><td>$1,219</td></tr><tr><th>Drift</th><td>$1,491</td></tr><tr><th>Holt damped</th><td>$2,661</td></tr><tr><th>Seasonal naive</th><td>$6,445</td></tr><tr><th>Linear trend</th><td>$7,662</td></tr></table></div>
             </div>
-          </div>
-          <div class="vs"><strong>VS</strong>same protocol</div>
-          <div class="team right">
-            <div class="circle">PVD</div>
-            <div>
-              <h2>Providence, RI</h2>
-              <p>East seed 16 · ZIP 02903</p>
-              <div class="forecast">
-                $438,308<small>Next-month forecast</small>
-              </div>
-                <p>+0.44% vs August</p>
-            </div>
-          </div>
+            <img class="trend" src="cambridge-ithaca-trends.png" alt="Cambridge and Ithaca housing trends">
+            <p class="source"><b>Source and method.</b> Zillow publishes the underlying ZHVI histories by geography and housing type. ChrionML located the condo/co-op views, compiled and quality-checked the monthly datasets, compared five models, ran 44 chronological backtests per city, and produced these forecasts and findings. <a href="https://www.zillow.com/home-values/58653/cambridge-ma-02139/">Cambridge source</a> · <a href="https://www.zillow.com/home-values/63776/ithaca-ny-14850/">Ithaca source</a>. Zillow did not produce or endorse the forecasts.</p>
+          </div></details>
         </div>
-        <div class="leader">Providence leads by projected monthly growth</div>
-      </section>
-      <div class="layout">
-        <section class="panel">
-          <h2>Forecasting box score</h2>
-          <div class="scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Measure</th>
-                  <th>Boston</th>
-                  <th>Providence</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="">
-                  <th>Months analyzed</th>
-                  <td>80 (Jan 2020–Aug 2026)</td>
-                  <td>80 (Jan 2020–Aug 2026)</td>
-                </tr>
-                <tr class="">
-                  <th>Latest typical home value</th>
-                  <td>$778,846 · Aug 2026</td>
-                  <td>$436,391 · Aug 2026</td>
-                </tr>
-                <tr class="">
-                  <th>Historical average home value</th>
-                  <td>$766,138</td>
-                  <td>$374,586</td>
-                </tr>
-                <tr class="">
-                  <th>Historical high home value</th>
-                  <td>$800,078 · Feb 2025</td>
-                  <td>$436,391 · Aug 2026</td>
-                </tr>
-                <tr class="">
-                  <th>Historical low home value</th>
-                  <td>$742,495 · Jan 2020</td>
-                  <td>$284,910 · Jan 2020</td>
-                </tr>
-                <tr class="">
-                  <th>Year-over-year change</th>
-                  <td>+1.9%</td>
-                  <td>+1.2%</td>
-                </tr>
-                <tr class="">
-                  <th>Selected model</th>
-                  <td>Drift</td>
-                  <td>Drift</td>
-                </tr>
-                <tr class="featured">
-                  <th>Next-month forecast</th>
-                    <td>$779,306 · +0.06%</td>
-                    <td>$438,308 · +0.44%</td>
-                </tr>
-                <tr class="">
-                  <th>80% prediction range</th>
-                  <td>$774,731–$784,034</td>
-                  <td>$435,622–$439,823</td>
-                </tr>
-                <tr class="">
-                  <th>Rolling forecast error</th>
-                  <td>MAE $2,824 · baseline $2,953</td>
-                  <td>MAE $1,378 · baseline $1,818</td>
-                </tr>
-              </tbody>
-            </table>
+      </article></div>
+    </section>
+
+    <section class="dategroup" id="week1">
+      <div class="datebar"><strong>Friday, September 25, 2026</strong><span>Week 1 · East</span></div>
+      <div class="matchup"><article class="game">
+        <div class="gametop"><span class="status">FINAL</span><span class="method">80 months · 44 rolling backtests per city</span></div>
+        <div class="scoregrid">
+          <div class="teams">
+            <div class="team"><span class="citymark">BOS</span><div class="city"><b>Boston, MA</b><small>ZIP 02114 · Latest ZHVI $778,846</small></div><div class="price"><strong>$779,306</strong><small>FORECAST · <span class="up">+0.06%</span></small></div></div>
+            <div class="team"><span class="citymark">PVD</span><div class="city"><b>Providence, RI</b><small>ZIP 02903 · Latest ZHVI $436,391</small></div><div class="price"><strong>$438,308</strong><small>FORECAST · <span class="up">+0.44%</span></small></div></div>
           </div>
-        </section>
-        <aside class="side">
-          <h2>Model comparison</h2>
-          <div>
-            <p><strong>Boston winner</strong><br />Drift<br />MAE $2,824</p>
-            <p><strong>Providence winner</strong><br />Drift<br />MAE $1,378</p>
-            <p class="eyebrow">Candidate MAE</p>
-            <p class="model">Drift<b>$1,378</b></p>
-            <p class="model">Last value baseline<b>$1,818</b></p>
-            <p class="model">Holt damped trend<b>$3,250</b></p>
-            <p class="model">Linear trend (36m)<b>$7,474</b></p>
-            <p class="model">Seasonal naive (12m)<b>$20,511</b></p>
-          </div>
-        </aside>
-      </div>
-      <section class="trend">
-        <h2>Housing trends</h2>
-        <img
-          src="boston-providence-trends.png"
-          alt="Two-panel chart comparing Boston and Providence monthly condo co-op home values and indexed growth from January 2020 through August 2026"
-        />
-      </section>
-      <div class="notes">
-        <strong>Interpretation.</strong> The matchup leader is based only on the
-        larger projected percentage change for September 2026. Model MAE
-        measures forecast reliability and does not determine the leader. Zillow
-        overview pages validate the ZIP geographies; the supplied data files
-        drive every value shown here. This analysis is not an appraisal or
-        investment recommendation.
-      </div>
-    </main>
-    <footer>
-      <a href="https://www.zillow.com/home-values/58628/boston-ma-02114/"
-        >Boston 02114 source</a
-      >
-      ·
-      <a href="https://www.zillow.com/home-values/58978/providence-ri-02903/"
-        >Providence 02903 source</a
-      >
-        · Updated September 2026
-    </footer>
-  </body>
+          <details><summary>BOX SCORE</summary><div class="box">
+            <h3>Boston vs Providence research statistics</h3><p class="sub">Boston leads on forecast value; Providence leads projected month-ahead momentum and cumulative appreciation since January 2020.</p>
+            <div class="stats"><div class="stat"><small>Boston growth</small><b>+4.9%</b></div><div class="stat"><small>Providence growth</small><b>+53.2%</b></div><div class="stat"><small>Boston range</small><b>$775K–$784K</b></div><div class="stat"><small>Providence range</small><b>$436K–$440K</b></div></div>
+            <div class="tables">
+              <div class="modeltable"><h4>Boston · MAE</h4><table><tr class="winner"><th>Drift · selected</th><td>$2,824</td></tr><tr><th>Last value</th><td>$2,953</td></tr><tr><th>Holt damped</th><td>$6,710</td></tr><tr><th>Linear trend</th><td>$12,860</td></tr><tr><th>Seasonal naive</th><td>$19,708</td></tr></table></div>
+              <div class="modeltable"><h4>Providence · MAE</h4><table><tr class="winner"><th>Drift · selected</th><td>$1,378</td></tr><tr><th>Last value</th><td>$1,818</td></tr><tr><th>Holt damped</th><td>$3,250</td></tr><tr><th>Linear trend</th><td>$7,474</td></tr><tr><th>Seasonal naive</th><td>$20,511</td></tr></table></div>
+            </div>
+            <img class="trend" src="boston-providence-trends.png" alt="Boston and Providence housing trends">
+            <p class="source"><b>Source and method.</b> Zillow publishes the underlying ZHVI histories by geography and housing type. ChrionML located the condo/co-op views, compiled and quality-checked the monthly datasets, compared forecasting models, ran chronological backtests, and produced these forecasts and findings. <a href="https://www.zillow.com/home-values/58628/boston-ma-02114/">Boston source</a> · <a href="https://www.zillow.com/home-values/58978/providence-ri-02903/">Providence source</a>. Zillow did not produce or endorse the forecasts.</p>
+          </div></details>
+        </div>
+      </article></div>
+    </section>
+  </main>
+  <footer>Forecasts are analytical estimates, not appraisals, investment advice, or guarantees. Model statistics are shown for research transparency. © 2026 ChrionML AI Labs.</footer>
+</body>
 </html>

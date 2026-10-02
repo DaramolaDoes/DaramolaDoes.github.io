@@ -3,7 +3,7 @@
     "id": "east-1",
     "region": "East",
     "round": "opening",
-    "pairing_status": "scheduled",
+    "pairing_status": "final",
     "city_a": "Boston, MA",
     "seed_a": 1,
     "city_b": "Providence, RI",
@@ -11,13 +11,30 @@
     "date": "2026-09-25",
     "time": "01:00",
     "timezone": "America/New_York",
-    "result": null
+    "result": null,
+    "publication_status": "final",
+    "published_at": "2026-09-25",
+    "boxscore_url": "boxscore.html",
+    "data_source": "Zillow Home Value Index (ZHVI), condo/co-op series",
+    "research_process": "ChrionML series selection, dataset construction, QA, modeling, backtesting, interpretation, and publication",
+    "research_findings": {
+      "forecast_a": 779306,
+      "forecast_b": 438308,
+      "momentum_a": 0.06,
+      "momentum_b": 0.44,
+      "growth_since_2020_a": 4.9,
+      "growth_since_2020_b": 53.2,
+      "model_a": "Drift",
+      "model_b": "Drift",
+      "mae_a": 2824,
+      "mae_b": 1378
+    }
   },
   {
     "id": "east-2",
     "region": "East",
     "round": "opening",
-    "pairing_status": "scheduled",
+    "pairing_status": "final",
     "city_a": "Cambridge, MA",
     "seed_a": 2,
     "city_b": "Ithaca, NY",
@@ -25,7 +42,24 @@
     "date": "2026-10-02",
     "time": "01:00",
     "timezone": "America/New_York",
-    "result": null
+    "result": null,
+    "publication_status": "final",
+    "published_at": "2026-10-02",
+    "boxscore_url": "cambridge-ithaca-boxscore.html",
+    "data_source": "Zillow Home Value Index (ZHVI), condo/co-op series",
+    "research_process": "ChrionML series selection, dataset construction, QA, modeling, backtesting, interpretation, and publication",
+    "research_findings": {
+      "forecast_a": 888570,
+      "forecast_b": 289770,
+      "momentum_a": 0.19,
+      "momentum_b": 0.00,
+      "growth_since_2020_a": 17.8,
+      "growth_since_2020_b": 29.5,
+      "model_a": "Drift",
+      "model_b": "Last Value Baseline",
+      "mae_a": 3030,
+      "mae_b": 1219
+    }
   },
   {
     "id": "east-3",

@@ -720,7 +720,7 @@
         <a href="index.html">Research</a><a href="platform.html">Platform</a
         ><a href="standings.html">Standings</a
         ><a href="schedule.html" aria-current="page">Schedule</a
-        ><a href="cambridge-ithaca-boxscore.html">Featured box score</a>
+        ><a id="schedule-featured-boxscore" href="cambridge-ithaca-boxscore.html">Featured box score</a>
       </div>
     </div>
     <main id="main-content">
@@ -736,8 +736,8 @@
         </div>
         <span class="tag">32 weekly matchups</span>
       </div>
-      <div class="alert">
-        <strong>Weekly research cadence.</strong> Boston vs Providence is FINAL with a published box score. Cambridge vs Ithaca has passed data QA and model review; the Week 2 box-score preview is available.
+      <div class="alert" id="schedule-alert">
+        <strong>Weekly research cadence.</strong> Boston vs Providence and Cambridge vs Ithaca are FINAL with published box scores. Each completed matchup begins with Zillow ZHVI histories selected by ZIP code and housing type; ChrionML then constructs and checks the datasets, evaluates models, and publishes the independent findings. Schedule status and links are synchronized from the research data file.
       </div>
       <div class="rounds" aria-label="Tournament stages">
         <span class="selected">Opening round / Proposed</span
@@ -822,7 +822,7 @@
                     <td class="when">
                       Fri, Oct 2, 2026<em>1:00 a.m. ET</em>
                     </td>
-                    <td><a class="status preview" href="cambridge-ithaca-boxscore.html">PREVIEW</a></td>
+                    <td><a class="status final" href="cambridge-ithaca-boxscore.html">FINAL</a></td>
                   </tr>
                   <tr
                     class="match"
@@ -1515,6 +1515,52 @@
         }),
       );
       search.addEventListener("input", update);
+
+      async function hydrateScheduleResearch() {
+        try {
+          const response = await fetch("schedule-data.json", { cache: "no-store" });
+          if (!response.ok) throw new Error(`Schedule data returned ${response.status}`);
+          const schedule = await response.json();
+          const completed = schedule
+            .filter((matchup) =>
+              matchup.publication_status === "final" &&
+              matchup.boxscore_url &&
+              matchup.research_findings
+            )
+            .sort((a, b) => new Date(a.published_at || a.date) - new Date(b.published_at || b.date));
+
+          document.querySelectorAll(".match").forEach((row) => {
+            const record = schedule.find(
+              (matchup) => `${matchup.city_a} ${matchup.city_b}`.toLowerCase() === row.dataset.search,
+            );
+            if (!record) return;
+            const statusCell = row.querySelector("td:last-child");
+            const isPublished =
+              record.publication_status === "final" &&
+              record.boxscore_url &&
+              record.research_findings;
+            if (isPublished) {
+              row.querySelectorAll(".matchupcell a").forEach((link) => (link.href = record.boxscore_url));
+              statusCell.innerHTML = `<a class="status final" href="${record.boxscore_url}">FINAL</a>`;
+            } else if (record.publication_status === "preview" && record.boxscore_url) {
+              row.querySelectorAll(".matchupcell a").forEach((link) => (link.href = record.boxscore_url));
+              statusCell.innerHTML = `<a class="status preview" href="${record.boxscore_url}">PREVIEW</a>`;
+            } else {
+              statusCell.innerHTML = '<span class="status">SCHEDULED</span>';
+            }
+          });
+
+          const latest = completed.at(-1);
+          if (latest) {
+            document.getElementById("schedule-featured-boxscore").href = latest.boxscore_url;
+            document.getElementById("schedule-alert").innerHTML = `<strong>Weekly research cadence.</strong> ${completed.length} applied ML matchups are FINAL, covering ${completed.length * 2} published cities. The featured box score is ${latest.city_a} vs ${latest.city_b}. Historical inputs are Zillow ZHVI series selected by ZIP code and housing type; dataset construction, QA, modeling, backtesting, and interpretation are performed by ChrionML.`;
+          }
+        } catch (error) {
+          console.warn("Schedule is using its published fallback values.", error);
+        }
+      }
+
+      hydrateScheduleResearch();
     </script>
   </body>
 </html>
