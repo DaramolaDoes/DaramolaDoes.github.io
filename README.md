@@ -1,62 +1,58 @@
-# ChrionML AI Labs — Research & Insights
+# ChrionML® AI Labs — Research & Insights
 
-ChrionML AI Labs publishes evidence-led housing forecasts and applied machine-learning research. Zillow publishes the underlying Zillow Home Value Index (ZHVI) histories by geography and housing type; ChrionML locates the relevant condo/co-op series, compiles and quality-checks the monthly datasets, evaluates forecasting models, quantifies uncertainty, and translates the results into decision-ready findings.
+ChrionML® AI Labs publishes independent applied machine-learning research with transparent source qualification, dataset construction, quality assurance, model evaluation, interpretation, and limitations.
 
-## Completed projects
+## 64-City Intelligence program
 
-### 01 — Hyperlocal Housing Forecast Pipeline
+The program currently includes four completed ZIP-level condo/co-op forecasting projects:
 
-A reproducible forecasting workflow that converts Zillow’s published monthly ZHVI histories into structured research datasets, compares time-series models, conducts expanding-window backtests, quantifies uncertainty, and publishes results in a plain-language box score. Source data and ChrionML research outputs are identified separately throughout the site.
+- Boston, MA 02114
+- Providence, RI 02903
+- Cambridge, MA 02139
+- Ithaca, NY 14850
 
-Week 1 analyzes 80 monthly observations for each market:
+The studies are organized into two finalized matchups:
 
-- **Boston, MA 02114:** September 2026 forecast of **$779,306**, representing projected monthly growth of **0.06%**.
-- **Providence, RI 02903:** September 2026 forecast of **$438,308**, representing projected monthly growth of **0.44%**.
-- **Interpretation:** Boston leads on forecast home value; Providence leads on projected momentum.
-- **Selected model:** Drift, chosen independently for both cities using rolling one-month-ahead mean absolute error.
+- Week 1: Boston vs. Providence
+- Week 2: Cambridge vs. Ithaca
 
-The Week 2 research preview applies the same protocol to two additional markets:
+Each city uses 80 monthly observations and five candidate forecasting approaches evaluated through 44 expanding-window, one-month-ahead backtests.
 
-- **Cambridge, MA 02139:** September 2026 forecast of **$888,570**, representing projected monthly growth of **0.19%**.
-- **Ithaca, NY 14850:** September 2026 forecast of **$289,770**, representing projected monthly growth of **0.00%**.
-- **Long-run trajectory:** Ithaca increased **29.5%** since January 2020 versus **17.8%** for Cambridge.
-- **Selected models:** Drift for Cambridge and Last Value for Ithaca, chosen independently across 44 rolling backtests.
+## Data provenance
 
-### 02 — Scientific Methods, Operationalized
+Zillow publishes the underlying Zillow Home Value Index histories by geography and housing type. ChrionML® identifies the relevant condo/co-op series, compiles and quality-checks the research datasets, evaluates the forecasting models, quantifies uncertainty, and publishes the resulting analysis. Zillow did not produce, review, or endorse the forecasts.
 
-A scientific AI platform proof of concept that transforms experimental methods into governed, reproducible, and observable services. The platform demonstrates versioned API contracts, scientist and autonomous-agent workflows, deployment controls, traceability, and operational monitoring.
+Forecasts are analytical estimates—not appraisals, investment advice, or guarantees.
 
-## 64-city research program
+## Research architecture
 
-Boston and Providence are the first completed matchup in a 64-city program. Cambridge and Ithaca comprise the Week 2 research preview. The opening round contains 32 weekly forecast matchups scheduled for Fridays from September 25, 2026 through April 30, 2027.
+- `research/` — completed-project archive
+- `research/boston-vs-providence/` — Week 1 publication
+- `research/cambridge-vs-ithaca/` — Week 2 publication
+- `methodology/` — research protocol
+- `about-olu-daramola/` — Olu (Tim) Daramola, founder and research lead
+- `standings.html` — schedule-driven Research Standings
+- `schedule-data.json` — shared weekly publication data
 
-The program is designed to create a comparable evidence base across markets while maintaining consistent model evaluation, local context, transparent limitations, and reproducible publication standards.
+## Weekly standings update
 
-The new **64-City Price Bracket** presents the entire research field on one page. Completed matchup winners advance according to the higher published next-month forecast price. This is a visualization convention—not an assessment of affordability, momentum, model accuracy, market quality, or investment potential.
+When a matchup is complete:
 
-## Research standard
+1. Add the two city forecasts and historical average, high, and low values to `research_findings` in `schedule-data.json`.
+2. Set `publication_status` to `final`.
+3. Add the matchup `boxscore_url` and `published_at` date.
 
-Each published analysis identifies:
+The homepage and standings then update their city counts, latest matchup, table rows, and rankings automatically.
 
-- Zillow ZHVI geography, housing type, source link, and sample period
-- ChrionML dataset construction and quality checks
-- Candidate models and comparison baseline
-- Chronological backtesting approach
-- Forecast value, projected change, and uncertainty range
-- Out-of-sample error
-- Limitations and appropriate interpretation
+## Links
 
-Zillow provides the underlying historical ZHVI data. ChrionML independently produces the datasets used for analysis, model comparisons, forecasts, findings, and visualizations. Zillow did not produce, review, or endorse the forecasts. Forecasts are analytical estimates, not appraisals, investment advice, or guarantees.
+- [Production research site](https://daramoladoes.github.io/)
+- [Research archive](https://daramoladoes.github.io/research/)
+- [Research methodology](https://daramoladoes.github.io/methodology/)
+- [Olu (Tim) Daramola](https://daramoladoes.github.io/about-olu-daramola/)
+- [YouTube](https://www.youtube.com/@chrionml/videos)
+- [LinkedIn](https://www.linkedin.com/in/oludaramola-ai/)
 
-## Explore
+© 2024–2026 ChrionML® AI Labs
 
-- [Research & Insights](https://daramoladoes.github.io/)
-- [Scientific AI Platform](https://daramoladoes.github.io/platform.html)
-- [City Standings](https://daramoladoes.github.io/standings.html)
-- [Weekly Schedule](https://daramoladoes.github.io/schedule.html)
-- [64-City Price Bracket](https://daramoladoes.github.io/bracket.html)
-- [Boston vs Providence Box Score](https://daramoladoes.github.io/boxscore.html)
-- [Cambridge vs Ithaca Box Score](https://daramoladoes.github.io/cambridge-ithaca-boxscore.html)
-- [ChrionML AI Labs Videos](https://www.youtube.com/@chrionml/videos)
-
-© 2026 ChrionML AI Labs
+ChrionML® is the proprietary research brand of Olu (Tim) Daramola. Original brand assets and published works are supported by the referenced U.S. Copyright Office registration.

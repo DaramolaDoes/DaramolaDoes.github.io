@@ -1,38 +1,78 @@
-# Release notes — 64-City Price Bracket
+# Release notes — ChrionML® Research Archive
 
-Release date: October 2, 2026
+## Brand-standardization update — October 4, 2026
+
+- Standardized visible, metadata, Open Graph, structured-data, methodology, disclosure, and footer references to **ChrionML®**.
+- Preserved functional lowercase URLs and handles, including `youtube.com/@chrionml`.
+- Added a clear proprietary-brand statement to the public project documentation.
+
+Release date: October 4, 2026
 
 ## Summary
 
-This additive release introduces `bracket.html`, a responsive, ESPN-inspired view of the complete 64-city research tournament. The existing schedule, standings, price board, research homepage, and published box scores remain in place.
+This release establishes a scalable editorial and data architecture for the ChrionML® 64-City Intelligence program. Four completed city-level ML projects are organized into a searchable research archive, two matchup articles use a consistent scientific-publication structure, and Research Standings update from the shared schedule dataset.
 
-## What changed
+## New pages
 
-- Added `bracket.html` as a separate page; `schedule.html` was not replaced.
-- Displays all 64 cities across East, West, South, and Midwest regional brackets.
-- Advances published winners automatically from `schedule-data.json`.
-- Shows Boston and Cambridge in East Quarterfinal 1 based on their published next-month forecast prices.
-- Displays both forecast prices for completed matchups and labels the higher-price city as the bracket winner.
-- Preserves full city names through multiline wrapping at normal browser zoom.
-- Uses horizontal regional scrolling on smaller screens instead of truncating city names.
-- Includes an embedded fallback dataset so the page remains readable when opened outside a web server.
-- Adds Bracket navigation to the research homepage and adds the page to `sitemap.xml`.
-- Retains explicit Zillow-source and independent ChrionML-methodology disclosures.
+- `/research/` — archive for completed city ML projects and matchup publications
+- `/research/boston-vs-providence/` — Week 1 research article
+- `/research/cambridge-vs-ithaca/` — Week 2 research article
+- `/methodology/` — versioned research protocol
+- `/about-olu-daramola/` — founder and research-lead profile
 
-## Research disclosure
+## Research article standard
 
-Zillow publishes the underlying Zillow Home Value Index histories by geography and housing type. ChrionML selects the relevant condo/co-op series, compiles and quality-checks the monthly datasets, evaluates candidate forecasting models, quantifies uncertainty, and publishes the resulting forecasts and findings. Zillow did not produce, review, or endorse the forecasts.
+Each matchup article now includes:
 
-Forecasts are analytical estimates, not appraisals, investment advice, or guarantees.
+- Abstract and publication date
+- Research goal
+- Principal findings
+- Methods summary
+- Data availability and provenance
+- Limitations and interpretation boundaries
+- References and direct Zillow source links
+- Clickable in-page article navigation
+- Structured article metadata
 
-## Primary production files
+The author identity is standardized as **Olu (Tim) Daramola**. Principal findings use a light editorial presentation for improved readability.
 
-- `bracket.html` — new complete 64-city bracket
-- `schedule-data.json` — authoritative matchup status, forecasts, and box-score links
-- `index.html` — adds the Bracket navigation link
-- `sitemap.xml` — adds the public bracket URL
-- `README.md` — documents the bracket convention and public link
+## Dynamic Research Standings
+
+The ESPN-inspired standings table replaces sports W-L-T fields with:
+
+1. Forecasted Price
+2. Historical Average
+3. Historical High
+4. Historical Low
+
+The page reads finalized matchups from `schedule-data.json`, creates two city rows per matchup, sorts by forecasted price, recalculates rank, updates the published-city count, and supports region filters.
+
+For every future final matchup, add the following fields under `research_findings`:
+
+```json
+{
+  "forecast_a": 0,
+  "forecast_b": 0,
+  "historical_avg_a": 0,
+  "historical_avg_b": 0,
+  "historical_high_a": 0,
+  "historical_high_b": 0,
+  "historical_low_a": 0,
+  "historical_low_b": 0
+}
+```
+
+Also set `publication_status` to `final` and supply `boxscore_url`.
+
+## Search and brand identity
+
+- Added canonical URLs for all five new pages.
+- Added Organization, Person, CollectionPage, and TechArticle structured data.
+- Expanded `sitemap.xml`.
+- Connected personal LinkedIn, company LinkedIn, YouTube, GitHub, and the U.S. Copyright Office record.
+- Standardized the ChrionML® name and 2024–2026 copyright notation.
+- Reordered primary navigation to Research, Schedule, Bracket, Standings, Platform, Videos.
 
 ## Recommended commit message
 
-`Add 64-city price bracket with automatic winner advancement`
+`Launch ChrionML® research archive and dynamic city standings`
