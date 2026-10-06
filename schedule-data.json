@@ -77,7 +77,7 @@
     "id": "east-3",
     "region": "East",
     "round": "opening",
-    "pairing_status": "scheduled",
+    "pairing_status": "final",
     "city_a": "Back Bay, MA",
     "seed_a": 3,
     "city_b": "Hanover, NH",
@@ -85,7 +85,35 @@
     "date": "2026-10-09",
     "time": "01:00",
     "timezone": "America/New_York",
-    "result": null
+    "result": {
+      "winner": "Back Bay, MA",
+      "score_a": 1300581,
+      "score_b": 521201
+    },
+    "publication_status": "final",
+    "published_at": "2026-10-09",
+    "boxscore_url": "backbay-hanover-boxscore.html",
+    "research_url": "research/back-bay-vs-hanover/",
+    "research_findings": {
+      "forecast_a": 1300581,
+      "forecast_b": 521201,
+      "latest_a": 1298982,
+      "latest_b": 521201,
+      "historical_avg_a": 1232571,
+      "historical_avg_b": 459361,
+      "historical_high_a": 1298982,
+      "historical_high_b": 523568,
+      "historical_low_a": 1167104,
+      "historical_low_b": 330919,
+      "momentum_a": 0.12,
+      "momentum_b": 0.0,
+      "growth_since_2020_a": 10.77,
+      "growth_since_2020_b": 57.50,
+      "model_a": "Drift",
+      "model_b": "Last Value Baseline",
+      "mae_a": 2833,
+      "mae_b": 2312
+    }
   },
   {
     "id": "east-4",

@@ -29,8 +29,25 @@
   <header class="sitehead"><nav class="nav"><a class="brand" href="index.html"><img src="assets/cml-logo.png" alt="CML logo">ChrionML® AI LABS</a><a href="index.html">Research</a><a href="standings.html">Standings</a><a href="schedule.html">Schedule</a><a class="active" href="boxscore.html">Price Board</a></nav></header>
   <main>
     <section class="boardhead">
-      <div class="titleline"><div><div class="eyebrow">64-City Intelligence · Applied ML research</div><h1>Real Estate Condo Price Board</h1><p>Weekly ZIP-level condo/co-op forecasts derived from Zillow Home Value Index histories, with ChrionML® dataset construction, quality assurance, model evaluation, and interpretation.</p></div><span class="counter">4 cities · 2 final matchups</span></div>
-      <div class="weeks" aria-label="Research weeks"><a class="week" href="#week1"><b>WEEK 1</b>SEP 25</a><a class="week active" href="#week2"><b>WEEK 2</b>OCT 2</a><span class="week"><b>WEEK 3</b>OCT 9</span><span class="week"><b>WEEK 4</b>OCT 16</span></div>
+      <div class="titleline"><div><div class="eyebrow">64-City Intelligence · Applied ML research</div><h1>Real Estate Condo Price Board</h1><p>Weekly ZIP-level condo/co-op forecasts derived from Zillow Home Value Index histories, with ChrionML® dataset construction, quality assurance, model evaluation, and interpretation.</p></div><span class="counter">6 cities · 3 final matchups</span></div>
+      <div class="weeks" aria-label="Research weeks"><a class="week" href="#week1"><b>WEEK 1</b>SEP 25</a><a class="week" href="#week2"><b>WEEK 2</b>OCT 2</a><a class="week active" href="#week3"><b>WEEK 3</b>OCT 9</a><span class="week"><b>WEEK 4</b>OCT 16</span></div>
+    </section>
+
+    <section class="dategroup" id="week3">
+      <div class="datebar"><strong>Friday, October 9, 2026</strong><span>Week 3 · East</span></div>
+      <div class="matchup"><article class="game">
+        <div class="gametop"><span class="status">FINAL · MODEL REVIEW COMPLETE</span><span class="method">80 months · 44 rolling backtests per city</span></div>
+        <div class="scoregrid"><div class="teams">
+          <div class="team"><span class="citymark">BBY</span><div class="city"><b>Back Bay, MA</b><small>ZIP 02116 · Latest ZHVI $1,298,982</small></div><div class="price"><strong>$1,300,581</strong><small>FORECAST · <span class="up">+0.12%</span></small></div></div>
+          <div class="team"><span class="citymark">HAN</span><div class="city"><b>Hanover, NH</b><small>ZIP 03755 · Latest ZHVI $521,201</small></div><div class="price"><strong>$521,201</strong><small>FORECAST · 0.00%</small></div></div>
+        </div><details><summary>BOX SCORE</summary><div class="box">
+          <h3>Back Bay vs Hanover research statistics</h3><p class="sub">Back Bay wins the price comparison. Hanover leads cumulative growth since January 2020 and records the lower selected-model MAE.</p>
+          <div class="stats"><div class="stat"><small>Back Bay growth</small><b>+10.77%</b></div><div class="stat"><small>Hanover growth</small><b>+57.50%</b></div><div class="stat"><small>Back Bay 80% range</small><b>$1.296M–$1.305M</b></div><div class="stat"><small>Hanover 80% range</small><b>$519K–$526K</b></div></div>
+          <div class="tables"><div class="modeltable"><h4>Back Bay · MAE</h4><table><tr class="winner"><th>Drift · selected</th><td>$2,833</td></tr><tr><th>Last value</th><td>$2,898</td></tr></table></div><div class="modeltable"><h4>Hanover · MAE</h4><table><tr class="winner"><th>Last value · selected</th><td>$2,312</td></tr></table></div></div>
+          <img class="trend" src="backbay-hanover-trends.png" alt="Back Bay and Hanover condo and co-op ZHVI trends from January 2020 through August 2026">
+          <p class="source"><b>Source and method.</b> Zillow publishes the underlying ZHVI histories by geography and housing type. ChrionML® manually located the condo/co-op views, compiled and quality-checked 80 monthly observations per ZIP, compared five models across 44 chronological backtests per city, and produced the forecasts and findings. <a href="https://www.zillow.com/home-values/58630/boston-ma-02116/">Back Bay source</a> · <a href="https://www.zillow.com/home-values/59185/hanover-nh-03755/">Hanover source</a>. Zillow did not produce or endorse the forecasts.</p>
+        </div></details></div>
+      </article></div>
     </section>
 
     <section class="dategroup" id="week2">

@@ -4,17 +4,20 @@ ChrionML® AI Labs publishes independent applied machine-learning research with 
 
 ## 64-City Intelligence program
 
-The program currently includes four completed ZIP-level condo/co-op forecasting projects:
+The program currently includes six completed ZIP-level condo/co-op forecasting projects:
 
 - Boston, MA 02114
 - Providence, RI 02903
 - Cambridge, MA 02139
 - Ithaca, NY 14850
+- Back Bay, MA 02116
+- Hanover, NH 03755
 
-The studies are organized into two finalized matchups:
+The studies are organized into three finalized matchups:
 
 - Week 1: Boston vs. Providence
 - Week 2: Cambridge vs. Ithaca
+- Week 3: Back Bay vs. Hanover
 
 Each city uses 80 monthly observations and five candidate forecasting approaches evaluated through 44 expanding-window, one-month-ahead backtests.
 
@@ -29,6 +32,10 @@ Forecasts are analytical estimates—not appraisals, investment advice, or guara
 - `research/` — completed-project archive
 - `research/boston-vs-providence/` — Week 1 publication
 - `research/cambridge-vs-ithaca/` — Week 2 publication
+- `research/back-bay-vs-hanover/` — Week 3 publication
+- `backbay-hanover-boxscore.html` — Week 3 detailed box score
+- `boxscore.html` — all-matchup condo price board
+- `bracket.html` — schedule-driven 64-city price bracket
 - `methodology/` — research protocol
 - `about-olu-daramola/` — Olu (Tim) Daramola, founder and research lead
 - `standings.html` — schedule-driven Research Standings

@@ -1,78 +1,28 @@
-# Release notes — ChrionML® Research Archive
+# Week 3 Production Release — Back Bay vs. Hanover
 
-## Brand-standardization update — October 4, 2026
+Release date: October 9, 2026
 
-- Standardized visible, metadata, Open Graph, structured-data, methodology, disclosure, and footer references to **ChrionML®**.
-- Preserved functional lowercase URLs and handles, including `youtube.com/@chrionml`.
-- Added a clear proprietary-brand statement to the public project documentation.
+## Research publication
 
-Release date: October 4, 2026
+- Adds Back Bay, MA 02116 and Hanover, NH 03755 condo/co-op studies.
+- Adds the Week 3 publication and detailed forecasting box score.
+- Reports 80 monthly observations per city, January 2020–August 2026.
+- Reports five candidate models and 44 chronological backtests per city.
+- Advances Back Bay in the price bracket using the higher September 2026 forecast.
+- Separates forecast price leadership from growth and model-accuracy leadership.
 
-## Summary
+## Site updates
 
-This release establishes a scalable editorial and data architecture for the ChrionML® 64-City Intelligence program. Four completed city-level ML projects are organized into a searchable research archive, two matchup articles use a consistent scientific-publication structure, and Research Standings update from the shared schedule dataset.
+- Homepage now presents Week 3 first while preserving Weeks 2 and 1 below.
+- Schedule marks Back Bay vs. Hanover FINAL.
+- Standings rank six published cities by forecast price.
+- Condo Price Board contains three expandable matchup results.
+- Research archive now contains six city studies and three matchup publications.
+- Bracket advances Back Bay and links directly to its box score.
+- Sitemap includes the Week 3 box score and research article.
 
-## New pages
+## Data provenance
 
-- `/research/` — archive for completed city ML projects and matchup publications
-- `/research/boston-vs-providence/` — Week 1 research article
-- `/research/cambridge-vs-ithaca/` — Week 2 research article
-- `/methodology/` — versioned research protocol
-- `/about-olu-daramola/` — founder and research-lead profile
+Zillow publishes the underlying ZHVI histories by geography and housing type. ChrionML® manually identifies the applicable condo/co-op views, constructs and quality-checks the monthly datasets, evaluates the models, performs chronological backtesting, quantifies uncertainty, and publishes the interpretation. Zillow did not produce, review, or endorse the forecasts.
 
-## Research article standard
-
-Each matchup article now includes:
-
-- Abstract and publication date
-- Research goal
-- Principal findings
-- Methods summary
-- Data availability and provenance
-- Limitations and interpretation boundaries
-- References and direct Zillow source links
-- Clickable in-page article navigation
-- Structured article metadata
-
-The author identity is standardized as **Olu (Tim) Daramola**. Principal findings use a light editorial presentation for improved readability.
-
-## Dynamic Research Standings
-
-The ESPN-inspired standings table replaces sports W-L-T fields with:
-
-1. Forecasted Price
-2. Historical Average
-3. Historical High
-4. Historical Low
-
-The page reads finalized matchups from `schedule-data.json`, creates two city rows per matchup, sorts by forecasted price, recalculates rank, updates the published-city count, and supports region filters.
-
-For every future final matchup, add the following fields under `research_findings`:
-
-```json
-{
-  "forecast_a": 0,
-  "forecast_b": 0,
-  "historical_avg_a": 0,
-  "historical_avg_b": 0,
-  "historical_high_a": 0,
-  "historical_high_b": 0,
-  "historical_low_a": 0,
-  "historical_low_b": 0
-}
-```
-
-Also set `publication_status` to `final` and supply `boxscore_url`.
-
-## Search and brand identity
-
-- Added canonical URLs for all five new pages.
-- Added Organization, Person, CollectionPage, and TechArticle structured data.
-- Expanded `sitemap.xml`.
-- Connected personal LinkedIn, company LinkedIn, YouTube, GitHub, and the U.S. Copyright Office record.
-- Standardized the ChrionML® name and 2024–2026 copyright notation.
-- Reordered primary navigation to Research, Schedule, Bracket, Standings, Platform, Videos.
-
-## Recommended commit message
-
-`Launch ChrionML® research archive and dynamic city standings`
+Forecasts are analytical estimates—not appraisals, investment advice, or guarantees.
