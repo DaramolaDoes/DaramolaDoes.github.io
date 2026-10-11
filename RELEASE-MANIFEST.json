@@ -1,0 +1,28 @@
+{
+  "release": "ChrionML Forecast Labs shared navigation v1",
+  "source": "user-uploaded production repository ZIP",
+  "modified_html": [
+    "bracket.html",
+    "standings.html",
+    "index.html",
+    "research.html",
+    "platform.html",
+    "schedule.html",
+    "boxscore.html",
+    "cambridge-ithaca-boxscore.html",
+    "backbay-hanover-boxscore.html",
+    "forecast-lab.html",
+    "intelligence-lab.html",
+    "about-olu-daramola/index.html",
+    "research/index.html",
+    "methodology/index.html",
+    "research/back-bay-vs-hanover/index.html",
+    "research/cambridge-vs-ithaca/index.html",
+    "research/boston-vs-providence/index.html"
+  ],
+  "new_assets": [
+    "assets/css/forecast-navigation.css",
+    "assets/js/forecast-navigation.js"
+  ],
+  "deployment": "GitHub UI folder contents upload"
+}

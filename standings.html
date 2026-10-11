@@ -20,8 +20,10 @@
     @media(max-width:900px){.nav a:nth-last-child(n+5){display:none}.titleline{display:block}.count{border-left:0;border-top:1px solid var(--line);padding:18px 0 0;margin-top:20px}.method{grid-template-columns:1fr}}
     @media(max-width:620px){.utility-inner,.footer-inner{display:block}.nav-inner{padding:8px 16px}.brand img{width:40px;height:40px}.nav a{display:none}.nav .active{display:block;padding:20px 0}.page{padding:20px 12px 50px}.masthead{padding:24px 20px}.titleline h1{font-size:31px}.tabs{padding:0 7px}.tab{padding:14px 12px}.table-head{display:block}.table-head span{display:block;margin-top:6px}}
   </style>
+<link rel="stylesheet" href="/assets/css/forecast-navigation.css?v=1">
 </head>
-<body>
+<body class="cml-hide-original">
+<div class="cml-sitebar" id="cml-shared-navigation"></div>
   <a class="skip" href="#main">Skip to content</a>
   <div class="utility"><div class="utility-inner"><span>ChrionML® Research Monitor · October 2026</span><span><b id="published-count-top">6</b> finalized city models</span></div></div>
   <header><div class="nav-inner"><a class="brand" href="index.html"><img src="assets/cml-logo.png" alt="ChrionML® CML logo"><span>ChrionML® AI Labs<small>Research &amp; Insights</small></span></a><nav class="nav" aria-label="Primary"><a href="research/">Research</a><a href="schedule.html">Schedule</a><a href="bracket.html">Bracket</a><a class="active" href="standings.html" aria-current="page">Standings</a><a href="platform.html">Platform</a><a href="https://www.youtube.com/@chrionml/videos">Videos</a></nav></div></header>
@@ -55,5 +57,6 @@
     document.querySelectorAll(".tab").forEach((button) => button.addEventListener("click", () => {document.querySelectorAll(".tab").forEach((item) => item.setAttribute("aria-pressed","false"));button.setAttribute("aria-pressed","true");render(button.dataset.region);}));
     fetch("schedule-data.json", {cache:"no-store"}).then((response) => {if(!response.ok) throw new Error(`Schedule returned ${response.status}`);return response.json();}).then((schedule) => {allCities=cityRows(schedule);const count=allCities.length;document.getElementById("published-count").textContent=count;document.getElementById("published-count-top").textContent=count;if(allCities.length){const latest=allCities.map((city)=>city.published).filter(Boolean).sort().at(-1);document.getElementById("last-updated").textContent=`Updated ${new Date(`${latest}T12:00:00`).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})}`;}render();}).catch((error)=>console.warn("Standings are using published fallback values.",error));
   </script>
+<script defer src="/assets/js/forecast-navigation.js?v=1"></script>
 </body>
 </html>

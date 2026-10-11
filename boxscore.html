@@ -24,8 +24,10 @@
     footer{max-width:980px;margin:auto;padding:0 18px 30px;font-size:10px;color:#73777d;line-height:1.6}
     @media(max-width:720px){.nav>a:not(.brand){display:none}.titleline{display:block}.counter{display:inline-block;margin-top:12px}.titleline h1{font-size:27px}.scoregrid{grid-template-columns:1fr}.scoregrid>details>summary{width:100%}.stats{grid-template-columns:1fr 1fr}.tables{grid-template-columns:1fr}.weeks{overflow:auto;grid-template-columns:repeat(4,125px)}.team{grid-template-columns:40px minmax(0,1fr) auto}.price strong{font-size:18px}.method{display:none}}
   </style>
+<link rel="stylesheet" href="/assets/css/forecast-navigation.css?v=1">
 </head>
-<body>
+<body class="cml-hide-original">
+<div class="cml-sitebar" id="cml-shared-navigation"></div>
   <header class="sitehead"><nav class="nav"><a class="brand" href="index.html"><img src="assets/cml-logo.png" alt="CML logo">ChrionML® AI LABS</a><a href="index.html">Research</a><a href="standings.html">Standings</a><a href="schedule.html">Schedule</a><a class="active" href="boxscore.html">Price Board</a></nav></header>
   <main>
     <section class="boardhead">
@@ -97,5 +99,6 @@
     </section>
   </main>
   <footer>Forecasts are analytical estimates, not appraisals, investment advice, or guarantees. Model statistics are shown for research transparency. © 2026 ChrionML® AI Labs.</footer>
+<script defer src="/assets/js/forecast-navigation.js?v=1"></script>
 </body>
 </html>
