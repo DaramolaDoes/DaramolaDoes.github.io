@@ -14,8 +14,10 @@
     @media(max-width:980px){.brand-nav{flex-direction:column;gap:5px}.brand-link{margin:auto}.brand-links{justify-content:center}.hero-row{display:block}.summary{margin-top:15px}.tournament{grid-template-columns:1fr;grid-template-areas:"east" "west" "center" "south" "midwest"}.region{overflow-x:auto}.lanes{min-width:720px;min-height:590px}.region.right .lanes{direction:ltr}.region.right .game::after{left:auto;right:-7px}.round-head{display:none}.final-four{padding:16px}.city{overflow-wrap:normal}}
     @media(max-width:560px){main{padding:14px 8px}.hero{padding:17px}.hero h1{font-size:29px}.summary{flex-wrap:wrap}.stat{min-width:92px}.latest-result{grid-template-columns:1fr}.latest-result .result-price{text-align:left}.lanes{gap:3px;min-height:580px}.region{padding:6px}.team{font-size:8px;padding:4px 3px}.price{display:none}.game-head{font-size:7px}.brand-links{gap:12px}.brand-logo{width:44px;height:44px}}
   </style>
+<link rel="stylesheet" href="/assets/css/forecast-navigation.css?v=1">
 </head>
-<body>
+<body class="cml-hide-original">
+<div class="cml-sitebar" id="cml-shared-navigation"></div>
   <a class="skip" href="#main">Skip to bracket</a>
   <header class="brand-header"><nav class="brand-nav" aria-label="Primary"><a class="brand-link" href="index.html"><img class="brand-logo" src="assets/cml-logo.png" alt="ChrionML® logo">ChrionML® AI Labs</a><div class="brand-links"><a href="index.html">Research</a><a href="schedule.html">Schedule</a><a href="bracket.html" aria-current="page">Bracket</a><a href="standings.html">Standings</a><a href="boxscore.html">Box score</a><a href="https://www.youtube.com/@chrionml/videos">Videos</a></div></nav></header>
   <main id="main">
@@ -46,5 +48,6 @@
     async function init(){try{const response=await fetch('schedule-data.json',{cache:'no-store'});if(!response.ok)throw new Error(`Schedule data returned ${response.status}`);render(await response.json())}catch(error){console.info('Using embedded bracket preview data.',error);render(fallbackData)}}
     init();
   </script>
+<script defer src="/assets/js/forecast-navigation.js?v=1"></script>
 </body>
 </html>
