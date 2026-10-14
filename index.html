@@ -44,6 +44,12 @@
 .chrion-showcase .chrion-card:hover .photo img{transform:scale(1.025)}
 @media(min-width:950px){.chrion-showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px}.chrion-showcase>.chrion-kicker,.chrion-showcase>h2,.chrion-showcase>.intro{grid-column:1/-1}.chrion-showcase .chrion-card{margin:0!important}}
 @media(max-width:550px){.chrion-showcase .chrion-grid{gap:9px}.chrion-showcase .value{font-size:20px!important}}
+</style><style id="chrion-real-photo-fix">
+/* Production image correction: disable legacy placeholder pseudo-elements. */
+.chrion-showcase .chrion-city .photo::before,
+.chrion-showcase .chrion-city .photo::after{content:none!important;display:none!important;background:none!important;clip-path:none!important}
+.chrion-showcase .chrion-city .photo{background:#e8edf1!important;isolation:isolate}
+.chrion-showcase .chrion-city .photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;position:relative;z-index:1}
 </style></head>
 <body class="cml-hide-original">
 <div class="cml-sitebar" id="cml-shared-navigation"></div>
