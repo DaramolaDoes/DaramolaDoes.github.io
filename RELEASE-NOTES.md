@@ -1,28 +1,16 @@
-# Week 3 Production Release — Back Bay vs. Hanover
+# Week 4 corrected consolidated release — October 14, 2026
 
-Release date: October 9, 2026
+- Independently reproduced five candidate model results from the supplied Brooklyn and Philadelphia CSVs. Both select Holt damped trend: Brooklyn forecast $1,308,132, MAE $3,718; Philadelphia forecast $257,048, MAE $439. Values remain unchanged because the rerun confirmed them.
+- Included both original source CSVs, source hashes, exact dependency versions, full-precision results and executable model comparison code. Evaluation starts with 37 training months and spans 44 one-step forecasts from February 2023 through September 2026.
+- Corrected Philadelphia's monthly-change graphic to −0.29%, with a signed bar and zero baseline.
+- Corrected the Week 4 canonical URL, Open Graph metadata, structured article data, dates and archive identity.
+- Synchronized research counts, archive links and dated rankings; completed Week 4 historical statistics and bracket result records. Retained the October 16 program slot and explicitly identified October 14 as the early publication date.
+- Removed duplicate standings presentation, refreshed the eight-city fallback, and labeled forecast target months. Historical windows are 80 months for Weeks 1–3 and 81 for Week 4.
+- Fixed the missing homepage fragment and retired YouTube URL; added Week 4 to shared navigation and source/reproduction links to the study and box score.
+- Corrected the interactive ridge lab's chart-axis tick spacing and clarified that its experiment differs from published matchup forecasts.
+- Removed obsolete city-image placeholder overlays, added intended pages to the sitemap, and replaced conflicting deployment instructions.
+- Disclosed that model selection and reported errors use the same validation windows. Empirical signed-residual ranges remain uncalibrated; no independent post-selection test is claimed.
 
-## Research publication
+Earlier published model results are preserved. This revision reproduces Week 4 only; it does not independently validate every earlier raw dataset or error estimate.
 
-- Adds Back Bay, MA 02116 and Hanover, NH 03755 condo/co-op studies.
-- Adds the Week 3 publication and detailed forecasting box score.
-- Reports 80 monthly observations per city, January 2020–August 2026.
-- Reports five candidate models and 44 chronological backtests per city.
-- Advances Back Bay in the price bracket using the higher September 2026 forecast.
-- Separates forecast price leadership from growth and model-accuracy leadership.
-
-## Site updates
-
-- Homepage now presents Week 3 first while preserving Weeks 2 and 1 below.
-- Schedule marks Back Bay vs. Hanover FINAL.
-- Standings rank six published cities by forecast price.
-- Condo Price Board contains three expandable matchup results.
-- Research archive now contains six city studies and three matchup publications.
-- Bracket advances Back Bay and links directly to its box score.
-- Sitemap includes the Week 3 box score and research article.
-
-## Data provenance
-
-Zillow publishes the underlying ZHVI histories by geography and housing type. ChrionML® manually identifies the applicable condo/co-op views, constructs and quality-checks the monthly datasets, evaluates the models, performs chronological backtesting, quantifies uncertainty, and publishes the interpretation. Zillow did not produce, review, or endorse the forecasts.
-
-Forecasts are analytical estimates—not appraisals, investment advice, or guarantees.
+- Fixed schedule mobile grid and secondary-navigation overflow found by Chromium and retested at both widths.

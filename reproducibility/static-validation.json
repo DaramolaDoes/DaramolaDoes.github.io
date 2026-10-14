@@ -1,0 +1,28 @@
+{
+  "html_files": 21,
+  "missing_local_references": [],
+  "missing_anchors": [],
+  "empty_targets": [],
+  "json": [
+    {
+      "file": "schedule-data.json",
+      "valid": true
+    },
+    {
+      "file": "RELEASE-MANIFEST.json",
+      "valid": true
+    },
+    {
+      "file": "city-seeds.json",
+      "valid": true
+    },
+    {
+      "file": "reproducibility/week4-model-results.json",
+      "valid": true
+    },
+    {
+      "file": "assets/data/board.json",
+      "valid": true
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "pages": [
+    {
+      "file": "about-olu-daramola/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Olu (Tim) Daramola | Founder of ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Olu (Tim) Daramola."
+    },
+    {
+      "file": "backbay-hanover-boxscore.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Back Bay vs Hanover Box Score | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Back Bay vs Hanover"
+    },
+    {
+      "file": "boxscore.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Real Estate Condo Price Board | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Real Estate Condo Price Board"
+    },
+    {
+      "file": "bracket.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "64-City Price Bracket | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "64-City Price Bracket"
+    },
+    {
+      "file": "brooklyn-philadelphia-boxscore.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae Week 4 | Brooklyn vs Philadelphia",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Brooklyn vs. Philadelphia"
+    },
+    {
+      "file": "cambridge-ithaca-boxscore.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Cambridge vs Ithaca | Week 2 Box Score",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Cambridge vs Ithaca"
+    },
+    {
+      "file": "forecast-lab.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML | Boston vs Providence Forecast Lab",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Boston vs Providence | Forecast Lab"
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae AI Labs | Independent AI & Quantitative Research",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Evidence for better decisions."
+    },
+    {
+      "file": "intelligence-lab.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae Intelligence Lab | Product Launch Preview",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research you can explore.\nModels you can run."
+    },
+    {
+      "file": "methodology/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Research Methodology | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "One protocol. Local model selection."
+    },
+    {
+      "file": "partnerships.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Research Partnerships | ChrionML\u00ae",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research is stronger\nthrough collaboration."
+    },
+    {
+      "file": "platform.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae AI Labs | Scientific AI & Real Estate Forecasting",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Evidence. Models.\nDecisions."
+    },
+    {
+      "file": "research/back-bay-vs-hanover/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Back Bay vs Hanover ML Research | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Back Bay leads on price. Hanover leads on growth."
+    },
+    {
+      "file": "research/boston-vs-providence/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Boston vs Providence ML Research | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Boston leads on value. Providence leads on momentum."
+    },
+    {
+      "file": "research/brooklyn-vs-philadelphia/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Brooklyn vs Philadelphia ML Research | ChrionML\u00ae",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Brooklyn leads on value. Philadelphia leads in scale-adjusted forecast accuracy."
+    },
+    {
+      "file": "research/cambridge-vs-ithaca/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Cambridge vs Ithaca ML Research | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Cambridge leads near term. Ithaca leads since 2020."
+    },
+    {
+      "file": "research/index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae AI Labs Research | 64-City Intelligence",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research archive."
+    },
+    {
+      "file": "research.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Quantitative Research | ChrionML AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Methods first.\nFindings when supported."
+    },
+    {
+      "file": "standings.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "64-City Research Standings | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research Standings"
+    },
+    {
+      "file": "about-olu-daramola/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Olu (Tim) Daramola | Founder of ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Olu (Tim) Daramola."
+    },
+    {
+      "file": "backbay-hanover-boxscore.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Back Bay vs Hanover Box Score | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Back Bay vs Hanover"
+    },
+    {
+      "file": "boxscore.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Real Estate Condo Price Board | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Real Estate Condo Price Board"
+    },
+    {
+      "file": "bracket.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "64-City Price Bracket | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "64-City Price Bracket"
+    },
+    {
+      "file": "brooklyn-philadelphia-boxscore.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae Week 4 | Brooklyn vs Philadelphia",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Brooklyn vs. Philadelphia"
+    },
+    {
+      "file": "cambridge-ithaca-boxscore.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Cambridge vs Ithaca | Week 2 Box Score",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Cambridge vs Ithaca"
+    },
+    {
+      "file": "forecast-lab.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML | Boston vs Providence Forecast Lab",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Boston vs Providence | Forecast Lab"
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae AI Labs | Independent AI & Quantitative Research",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Evidence for better decisions."
+    },
+    {
+      "file": "intelligence-lab.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae Intelligence Lab | Product Launch Preview",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research you can explore.\nModels you can run."
+    },
+    {
+      "file": "methodology/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Research Methodology | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "One protocol. Local model selection."
+    },
+    {
+      "file": "partnerships.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Research Partnerships | ChrionML\u00ae",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research is stronger\nthrough collaboration."
+    },
+    {
+      "file": "platform.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae AI Labs | Scientific AI & Real Estate Forecasting",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Evidence. Models.\nDecisions."
+    },
+    {
+      "file": "research/back-bay-vs-hanover/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Back Bay vs Hanover ML Research | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Back Bay leads on price. Hanover leads on growth."
+    },
+    {
+      "file": "research/boston-vs-providence/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Boston vs Providence ML Research | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Boston leads on value. Providence leads on momentum."
+    },
+    {
+      "file": "research/brooklyn-vs-philadelphia/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Brooklyn vs Philadelphia ML Research | ChrionML\u00ae",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Brooklyn leads on value. Philadelphia leads in scale-adjusted forecast accuracy."
+    },
+    {
+      "file": "research/cambridge-vs-ithaca/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Cambridge vs Ithaca ML Research | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Cambridge leads near term. Ithaca leads since 2020."
+    },
+    {
+      "file": "research/index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML\u00ae AI Labs Research | 64-City Intelligence",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research archive."
+    },
+    {
+      "file": "research.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "Quantitative Research | ChrionML AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Methods first.\nFindings when supported."
+    },
+    {
+      "file": "standings.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "64-City Research Standings | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Research Standings"
+    },
+    {
+      "file": "schedule.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "City Matchup Schedule | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "overflowElements": [],
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "City Matchup Schedule"
+    },
+    {
+      "file": "schedule.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "City Matchup Schedule | ChrionML\u00ae AI Labs",
+      "overflow": false,
+      "scrollWidth": 390,
+      "overflowElements": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "right": 579,
+          "text": "\n\n                  East proposed o"
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "right": 579,
+          "text": "\n\nMatchup\nDate / Time (ET)\nStatus\n\n"
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "right": 579,
+          "text": "\nMatchup\nDate / Time (ET)\nStatus\n"
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "right": 479,
+          "text": "Date / Time (ET)"
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "right": 579,
+          "text": "Status"
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "right": 579,
+          "text": "\n\n\n1Boston, MAvs16Providence, RI\n\n\n"
+        },
+        {
+          "tag": "TR",
+          "cls": "match",
+          "right": 579,
+          "text": "\n\n1Boston, MAvs16Providence, RI\n\n\n "
+        },
+        {
+          "tag": "TD",
+          "cls": "when",
+          "right": 479,
+          "text": "\n                      Fri, Sep 25,"
+        },
+        {
+          "tag": "EM",
+          "cls": "",
+          "right": 467,
+          "text": "1:00 a.m. ET"
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "right": 579,
+          "text": "FINAL"
+        },
+        {
+          "tag": "A",
+          "cls": "status final",
+          "right": 538,
+          "text": "FINAL"
+        },
+        {
+          "tag": "TR",
+          "cls": "match",
+          "right": 579,
+          "text": "\n\n2Cambridge, MAvs15Ithaca, NY\n\n\n  "
+        },
+        {
+          "tag": "TD",
+          "cls": "when",
+          "right": 479,
+          "text": "\n                      Fri, Oct 2, "
+        },
+        {
+          "tag": "EM",
+          "cls": "",
+          "right": 467,
+          "text": "1:00 a.m. ET"
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "right": 579,
+          "text": "FINAL"
+        },
+        {
+          "tag": "A",
+          "cls": "status final",
+          "right": 538,
+          "text": "FINAL"
+        },
+        {
+          "tag": "TR",
+          "cls": "match",
+          "right": 579,
+          "text": "\n\n3Back Bay, MAvs14Hanover, NH\n\n\n  "
+        },
+        {
+          "tag": "TD",
+          "cls": "when",
+          "right": 479,
+          "text": "\n                      Fri, Oct 9, "
+        }
+      ],
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "City Matchup Schedule"
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Shared navigation opens, contains Week 4, closes on Escape",
+      "pass": true
+    },
+    {
+      "name": "Standings loads 8 cities and filters West/East",
+      "pass": true
+    },
+    {
+      "name": "Bracket renders 32 opening games, 4 finals, 8 cities",
+      "pass": true
+    },
+    {
+      "name": "Forecast lab city/horizon/model controls execute",
+      "pass": true
+    },
+    {
+      "name": "Week 4 research canonical and signed chart",
+      "pass": true
+    },
+    {
+      "name": "Schedule search and regional filters",
+      "pass": true
+    },
+    {
+      "name": "Price board expansions",
+      "pass": true
+    },
+    {
+      "name": "Mobile navigation opens and Week 4 is reachable",
+      "pass": true
+    }
+  ],
+  "browser": "153.0.8010.0"
+}
