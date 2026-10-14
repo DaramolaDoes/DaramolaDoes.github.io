@@ -1,0 +1,90 @@
+[
+  {
+    "file": "revised/about-olu-daramola/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/assets/js/forecast-navigation.js",
+    "pass": true
+  },
+  {
+    "file": "revised/assets/js/site.js",
+    "pass": true
+  },
+  {
+    "file": "revised/bracket.html#script1",
+    "pass": true
+  },
+  {
+    "file": "revised/forecast-lab.html#script1",
+    "pass": true
+  },
+  {
+    "file": "revised/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/index.html#script2",
+    "pass": true
+  },
+  {
+    "file": "revised/methodology/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/platform.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/research/back-bay-vs-hanover/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/research/boston-vs-providence/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/research/brooklyn-vs-philadelphia/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/research/cambridge-vs-ithaca/index.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/research.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/schedule.html",
+    "script": 1,
+    "type": "JSON-LD",
+    "pass": true
+  },
+  {
+    "file": "revised/schedule.html#script2",
+    "pass": true
+  },
+  {
+    "file": "revised/standings.html#script1",
+    "pass": true
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "protocol": "Expanding window, 37 initial training observations, 44 one-month forecasts. Model selected on these same validation windows; no independent post-selection test.",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "statsmodels": "0.15.0",
+  "results": {
+    "brooklyn": {
+      "observations": 81,
+      "backtests": 44,
+      "initial_training_months": 37,
+      "first_backtest": "2023-02",
+      "last_backtest": "2026-09",
+      "selected_model": "Holt damped trend",
+      "forecast": 1308132.4740835573,
+      "latest": 1306042.0,
+      "momentum_pct": 0.16006178082765832,
+      "relative_mae_pct": 0.2847067249103944,
+      "range80": [
+        1303928.8435357376,
+        1312636.7500262712
+      ],
+      "historical_avg": 1359451.5061728396,
+      "historical_high": 1579190.0,
+      "historical_low": 1193171.0,
+      "growth_since_2020_pct": -9.012933541867685,
+      "source_sha256": "7c60a90b2bd594e56ea5d54eb3465600f498784200fec45e7689a1a23e9fc65d",
+      "leaderboard": [
+        {
+          "model": "Holt damped trend",
+          "mae": 3718.3894041542135,
+          "rmse": 5739.001346616556,
+          "forecast": 1308132.4740835573,
+          "residual_p10": -4203.6305478197755,
+          "residual_p90": 4504.27594271407
+        },
+        {
+          "model": "Last value baseline",
+          "mae": 8993.25,
+          "rmse": 14466.562196854322,
+          "forecast": 1306042.0,
+          "residual_p10": -17042.9,
+          "residual_p90": 7546.4
+        },
+        {
+          "model": "Drift",
+          "mae": 10056.07853769455,
+          "rmse": 14482.669662749106,
+          "forecast": 1304424.8375,
+          "residual_p10": -13136.130454545468,
+          "residual_p90": 10250.465126050334
+        },
+        {
+          "model": "Linear trend (36m)",
+          "mae": 99990.0530303029,
+          "rmse": 116737.26385970383,
+          "forecast": 1309774.7523809534,
+          "residual_p10": -182263.13984127052,
+          "residual_p90": 131156.23444444383
+        },
+        {
+          "model": "Seasonal naive (12m)",
+          "mae": 111923.31818181818,
+          "rmse": 152772.97379221948,
+          "forecast": 1257871.0,
+          "residual_p10": -287522.9,
+          "residual_p90": 53424.3
+        }
+      ]
+    },
+    "philadelphia": {
+      "observations": 81,
+      "backtests": 44,
+      "initial_training_months": 37,
+      "first_backtest": "2023-02",
+      "last_backtest": "2026-09",
+      "selected_model": "Holt damped trend",
+      "forecast": 257048.06258309644,
+      "latest": 257791.0,
+      "momentum_pct": -0.28819369834616193,
+      "relative_mae_pct": 0.1701714291888614,
+      "range80": [
+        256354.54513313196,
+        257686.63634893938
+      ],
+      "historical_avg": 261712.11111111112,
+      "historical_high": 279131.0,
+      "historical_low": 247971.0,
+      "growth_since_2020_pct": 3.9601405003004464,
+      "source_sha256": "d8b261c622a36ea36090c556ff5ee3c64a76e21cc25350a3ca605ffe7f63d7d1",
+      "leaderboard": [
+        {
+          "model": "Holt damped trend",
+          "mae": 438.6866290202577,
+          "rmse": 566.771779908556,
+          "forecast": 257048.06258309644,
+          "residual_p10": -693.5174499644694,
+          "residual_p90": 638.5737658429427
+        },
+        {
+          "model": "Last value baseline",
+          "mae": 702.0454545454545,
+          "rmse": 938.0287842065402,
+          "forecast": 257791.0,
+          "residual_p10": -1269.1,
+          "residual_p90": 738.7
+        },
+        {
+          "model": "Drift",
+          "mae": 804.6521299727683,
+          "rmse": 1071.3554056269081,
+          "forecast": 257913.75,
+          "residual_p10": -1445.7015942028927,
+          "residual_p90": 594.7124999999915
+        },
+        {
+          "model": "Seasonal naive (12m)",
+          "mae": 6757.022727272727,
+          "rmse": 8368.084508470805,
+          "forecast": 264536.0,
+          "residual_p10": -14960.9,
+          "residual_p90": 6596.800000000003
+        },
+        {
+          "model": "Linear trend (36m)",
+          "mae": 6995.128751803765,
+          "rmse": 8297.594195922586,
+          "forecast": 261756.18253968272,
+          "residual_p10": -14643.616666666767,
+          "residual_p90": 8346.728412698263
+        }
+      ]
+    }
+  }
+}

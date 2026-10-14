@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://github.com/DaramolaDoes/DaramolaDoes.github.io",
+    "status": 200,
+    "final": "https://github.com/DaramolaDoes/DaramolaDoes.github.io"
+  },
+  {
+    "url": "https://github.com/DaramolaDoes/DaramolaDoes.github.io/issues/new?title=Research%20partnership%20inquiry",
+    "status": 200,
+    "final": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FDaramolaDoes%2FDaramolaDoes.github.io%2Fissues%2Fnew%3Ftitle%3DResearch%2520partnership%2520inquiry"
+  },
+  {
+    "url": "https://github.com/DaramolaDoes/daramoladoes.github.io",
+    "status": 200,
+    "final": "https://github.com/DaramolaDoes/daramoladoes.github.io"
+  },
+  {
+    "url": "https://publicrecords.copyright.gov/detailed-record/voyager_38173189?associatedRecords=Daramola,%20Olu&associatedRecordsDate=",
+    "status": 200,
+    "final": "https://publicrecords.copyright.gov/detailed-record/voyager_38173189?associatedRecords=Daramola,%20Olu&associatedRecordsDate="
+  },
+  {
+    "url": "https://www.linkedin.com/company/optimal-mobile-solutions-consulting-group/",
+    "status": 200,
+    "final": "https://www.linkedin.com/company/optimal-mobile-solutions-consulting-group/"
+  },
+  {
+    "url": "https://www.youtube.com/@chrionml/videos",
+    "status": 200,
+    "final": "https://www.youtube.com/@chrionml/videos"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=WMnjLXNHDr4",
+    "status": 200,
+    "final": "https://www.youtube.com/watch?v=WMnjLXNHDr4"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/58630/boston-ma-02116/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/58630/boston-ma-02116/"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/58978/providence-ri-02903/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/58978/providence-ri-02903/"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/59185/hanover-nh-03755/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/59185/hanover-nh-03755/"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/62012/brooklyn-new-york-ny-11201/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/62012/brooklyn-new-york-ny-11201/"
+  },
+  {
+    "url": "https://youtu.be/0sA5xuZdY7Q",
+    "status": 200,
+    "final": "https://www.youtube.com/watch?v=0sA5xuZdY7Q&feature=youtu.be"
+  },
+  {
+    "url": "https://www.linkedin.com/in/oludaramola-ai/",
+    "error": "HTTP Error 999: <none>"
+  },
+  {
+    "url": "https://www.linkedin.com/in/timdaramola/",
+    "error": "HTTP Error 999: <none>"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/58628/boston-ma-02114/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/58628/boston-ma-02114/"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/58653/cambridge-ma-02139/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/58653/cambridge-ma-02139/"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/63776/ithaca-ny-14850/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/63776/ithaca-ny-14850/"
+  },
+  {
+    "url": "https://www.zillow.com/home-values/65775/philadelphia-pa-19107/",
+    "status": 200,
+    "final": "https://www.zillow.com/home-values/65775/philadelphia-pa-19107/"
+  }
+]

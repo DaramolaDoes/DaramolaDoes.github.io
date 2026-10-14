@@ -11,10 +11,14 @@
     "date": "2026-09-25",
     "time": "01:00",
     "timezone": "America/New_York",
-    "result": null,
+    "result": {
+      "winner": "Boston, MA",
+      "score_a": 779306,
+      "score_b": 438308
+    },
     "publication_status": "final",
     "published_at": "2026-09-25",
-    "boxscore_url": "boxscore.html",
+    "boxscore_url": "boxscore.html#week1",
     "data_source": "Zillow Home Value Index (ZHVI), condo/co-op series",
     "research_process": "ChrionML\u00ae series selection, dataset construction, QA, modeling, backtesting, interpretation, and publication",
     "research_findings": {
@@ -33,8 +37,12 @@
       "model_a": "Drift",
       "model_b": "Drift",
       "mae_a": 2824,
-      "mae_b": 1378
-    }
+      "mae_b": 1378,
+      "forecast_month": "2026-09",
+      "sample_size_per_city": 80,
+      "backtest_windows_per_city": 44
+    },
+    "research_url": "research/boston-vs-providence/"
   },
   {
     "id": "east-2",
@@ -48,7 +56,11 @@
     "date": "2026-10-02",
     "time": "01:00",
     "timezone": "America/New_York",
-    "result": null,
+    "result": {
+      "winner": "Cambridge, MA",
+      "score_a": 888570,
+      "score_b": 289770
+    },
     "publication_status": "final",
     "published_at": "2026-10-02",
     "boxscore_url": "cambridge-ithaca-boxscore.html",
@@ -70,8 +82,12 @@
       "model_a": "Drift",
       "model_b": "Last Value Baseline",
       "mae_a": 3030,
-      "mae_b": 1219
-    }
+      "mae_b": 1219,
+      "forecast_month": "2026-09",
+      "sample_size_per_city": 80,
+      "backtest_windows_per_city": 44
+    },
+    "research_url": "research/cambridge-vs-ithaca/"
   },
   {
     "id": "east-3",
@@ -112,14 +128,17 @@
       "model_a": "Drift",
       "model_b": "Last Value Baseline",
       "mae_a": 2833,
-      "mae_b": 2312
+      "mae_b": 2312,
+      "forecast_month": "2026-09",
+      "sample_size_per_city": 80,
+      "backtest_windows_per_city": 44
     }
   },
   {
     "id": "east-4",
     "region": "East",
     "round": "opening",
-    "pairing_status": "scheduled",
+    "pairing_status": "final",
     "city_a": "Brooklyn, NY",
     "seed_a": 4,
     "city_b": "Philadelphia, PA",
@@ -127,9 +146,13 @@
     "date": "2026-10-16",
     "time": "01:00",
     "timezone": "America/New_York",
-    "result": null,
-    "publication_status": "validated",
-    "research_status": "validated_pending_publication",
+    "result": {
+      "winner": "Brooklyn, NY",
+      "score_a": 1308132,
+      "score_b": 257048
+    },
+    "publication_status": "final",
+    "research_status": "published",
     "boxscore_url": "brooklyn-philadelphia-boxscore.html",
     "research_findings": {
       "forecast_a": 1308132,
@@ -142,8 +165,32 @@
       "mae_b": 439,
       "forecast_month": "2026-10",
       "sample_size_per_city": 81,
-      "backtest_windows_per_city": 44
-    }
+      "backtest_windows_per_city": 44,
+      "latest_a": 1306042,
+      "historical_avg_a": 1359452,
+      "historical_high_a": 1579190,
+      "historical_low_a": 1193171,
+      "growth_since_2020_a": -9.01,
+      "relative_mae_pct_a": 0.285,
+      "empirical_range80_a": [
+        1303929,
+        1312637
+      ],
+      "latest_b": 257791,
+      "historical_avg_b": 261712,
+      "historical_high_b": 279131,
+      "historical_low_b": 247971,
+      "growth_since_2020_b": 3.96,
+      "relative_mae_pct_b": 0.17,
+      "empirical_range80_b": [
+        256355,
+        257687
+      ]
+    },
+    "published_at": "2026-10-14",
+    "research_url": "research/brooklyn-vs-philadelphia/",
+    "scheduled_date": "2026-10-16",
+    "publication_note": "Published early on October 14; original program slot October 16."
   },
   {
     "id": "east-5",
