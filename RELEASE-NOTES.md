@@ -14,3 +14,7 @@
 Earlier published model results are preserved. This revision reproduces Week 4 only; it does not independently validate every earlier raw dataset or error estimate.
 
 - Fixed schedule mobile grid and secondary-navigation overflow found by Chromium and retested at both widths.
+
+## Homepage copy update
+
+Replaced the unsupported “Original city photography” claim with a description of published matchups, forecasts, validation results and source data. Rechecked the homepage in desktop and mobile Chromium; exact text and removal of the old claim passed.

@@ -34,3 +34,7 @@ The retired YouTube URL was replaced with the responding ChrionML channel. Of 18
 ## Deployment scope
 
 This package replaces the complete static site, including index.html. Use DEPLOYMENT.md, preserve all folders, and verify the published pages after GitHub Pages finishes. Hosting-specific behavior is not established by local tests.
+
+## Homepage copy revision
+
+The revised homepage paragraph was rechecked in Chromium at 1440×900 and 390×900, with additional desktop/mobile preview captures. Exact replacement wording was verified, the old photography claim was absent, and no runtime errors, broken assets, missing anchors, or horizontal overflow were detected. The earlier full-site results apply to the unchanged pages. Evidence: reproducibility/homepage-copy-validation.json.
