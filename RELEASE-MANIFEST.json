@@ -14,9 +14,9 @@
     "GITHUB-UI-DEPLOYMENT.md": "333425ae21bfc9e0148aa70bc0c461bb2b92d74d81e3cec417be734f83308be5",
     "HOMEPAGE-INSERT.html": "c9789f1c779bde53f0f25785653d7fcf136bb184184d10d46c432b5d93fa7e39",
     "README.md": "21cc78668ebc1f31ef01a2ea3416886300d897f5618612fef65cc7880851823f",
-    "RELEASE-NOTES.md": "6285179de45c14d8409e8014d735d051e87beb61ef320493d6e2031bf370d732",
+    "RELEASE-NOTES.md": "5644bcc55d0f38e460ed496322b3e20fd4f2bd7f97b1f610551fb208da323806",
     "RELEASE-WEEK4-TODAY.md": "333425ae21bfc9e0148aa70bc0c461bb2b92d74d81e3cec417be734f83308be5",
-    "VALIDATION.md": "66d43c440e6c6935f6af2c0e7228c63cd825fc98fd7208ed03880619be647086",
+    "VALIDATION.md": "54f4e70860c62638c48d1043b0f43cc2a3c1329fe9015cc3f422244df7e76588",
     "about-olu-daramola/index.html": "54e25a2bff24a57c161c4fe2751d5a99368619392b1e0c556631642c9b0da47d",
     "assets/archive.css": "3cbdf6d4f26062e3e5d2bbe02c7d85aff57c8c1b3c375ec76ea517370927e8eb",
     "assets/cml-logo.png": "7af4334748f323297b09e25e0657f461b6c5e40ea352a1662596a4eb1d25dc64",
@@ -49,13 +49,14 @@
     "city-seeds.json": "ae4ae03d5ff07e0ac50ff3cb99e6123ec6e2cb9e026ced011a6838c63d73cbf7",
     "download": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "forecast-lab.html": "0b5343c16c3dc7278a5e7f75103b2d95dae7cc573b843f478e3c0696382c988f",
-    "index.html": "e01036f00f5edab0d59dc549dc4e089dd1e167fa7704332ee76dcdb857043c1f",
+    "index.html": "8f5575e34311159f0f4d87eb8ab356693c69e1dd3c2898061451ac5f23a6c1e4",
     "intelligence-lab.html": "30f0910212bafadf387a5d5e1a745ada649440ae022577bc86882245f1d75913",
     "methodology/index.html": "a13dd04c6ecc11c6923214686c62af80779ee3f85ff2253094a270c31003b990",
     "partnerships.html": "644e71d045a06f4acc3984196da595856793baaf830d95184d083bba23969f39",
     "platform.html": "96ecbaebb4fc0cd12fdc437122c6f169903b2bf90fc72a98b0719f90766e9c37",
     "reproducibility/browser-validation.json": "e761d9a9b41e6997b50a450cf71dce9c37eb11bcc86b48fbc91e6eedccfc9e21",
     "reproducibility/external-url-validation.json": "04659587bc0914ff346a6ea736e8b3dc22245240a5da0fe353f775f3c5811990",
+    "reproducibility/homepage-copy-validation.json": "7f79a02d274a00dbc06637edc0873a00a786654cefb28ad5c028b9a8f5097f6f",
     "reproducibility/requirements.txt": "73ea660dad428eca42075bda5e1c523d832bc3455fb28c4e6626f663a99a24ac",
     "reproducibility/script-syntax-validation.json": "aea5f26dbb8c214566011854ca88791c0af457945e94924ba17f689e713de06e",
     "reproducibility/static-validation.json": "45ae24efe97986905715ef60dadd73860548cfcf0f4716c2f81815c0b811a8df",
@@ -72,5 +73,6 @@
     "schedule.html": "a99b08b8f670e7ab98be946ea92ddde8a3039964961db9be3b86ca95af743f92",
     "sitemap.xml": "4499ee4c3969a966bcd3ea25c80c5521b81cb886fa16b0a97b6b11ee86d0b3de",
     "standings.html": "f0bad0fa86dddb59a61ecdfe6a79683331013ed879b31e6b05e673394d0ce980"
-  }
+  },
+  "revision": "Homepage research-summary copy corrected and retested"
 }

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    {
+      "file": "index.html",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML® AI Labs | Independent AI & Quantitative Research",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "overflowElements": [],
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Evidence for better decisions."
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "title": "ChrionML® AI Labs | Independent AI & Quantitative Research",
+      "overflow": false,
+      "scrollWidth": 390,
+      "overflowElements": [
+        {
+          "tag": "A",
+          "cls": "",
+          "right": 427,
+          "text": "Applied ML"
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "right": 503,
+          "text": "Methods"
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "right": 610,
+          "text": "Research lead"
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "right": 711,
+          "text": "Partnerships"
+        }
+      ],
+      "brokenImages": [],
+      "missingAnchors": [],
+      "h1": "Evidence for better decisions."
+    }
+  ],
+  "interactions": [],
+  "browser": "153.0.8010.0",
+  "copyAssertions": {
+    "newCopyVisible": true,
+    "oldCopyAbsent": true
+  }
+}
